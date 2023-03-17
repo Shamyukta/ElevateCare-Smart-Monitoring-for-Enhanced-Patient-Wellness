@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+<style type="text/css">
+
+    body {
+	background-image: url('f2.jpg');
+    }
+</style>
+<body>
+  
+  <h3>Feedback Form</h3>
+
+  <div>
+   <p>Please provide your valuable feedback about this project!!</p>
+   <input type="text" placeholder="Enter name" id="name_field">
+    <input type="text" placeholder="Enter Email Here..." id="email_field">
+   <input type="text" placeholder="Enter feedback Here..." id="text_field">
+   <input type="text" placeholder="Rating out of 5" id="rating_field">
+   
+   <button id="submit_btn" onclick="storeData()" >Proceed</button>
+  </div>
+</br>
+<center> <img src="https://st.depositphotos.com/1003593/2205/i/600/depositphotos_22054777-stock-photo-feedback-concept.jpg" alt="feedback" width="250" height="250"></center>
+	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+	<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCAF2VuRIoFeB9l_DrV0JRs_XazcO57ECQ",
+    authDomain: "cloudminiproject-3d023.firebaseapp.com",
+    projectId: "cloudminiproject-3d023",
+    storageBucket: "cloudminiproject-3d023.appspot.com",
+    messagingSenderId: "1047704620539",
+    appId: "1:1047704620539:web:56e885ab56db65c3e0cf5e",
+    measurementId: "G-V728SVZ41L"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <script src="feedback.js"></script>
+</body>
+</html>
